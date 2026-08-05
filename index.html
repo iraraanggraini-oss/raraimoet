@@ -274,3 +274,79 @@ placeholder="Cari produk...">
 </h2>
 
 <div class="produk">
+<div class="card">
+<img src="https://picsum.photos/300?random=1">
+<div class="info">
+<div class="nama">Tas Pink</div>
+<div class="harga">Rp120.000</div>
+<button class="btn" onclick="tambah('Tas Pink',120000)">+ Keranjang</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?random=2">
+<div class="info">
+<div class="nama">Sepatu Sneakers</div>
+<div class="harga">Rp250.000</div>
+<button class="btn" onclick="tambah('Sepatu Sneakers',250000)">+ Keranjang</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?random=3">
+<div class="info">
+<div class="nama">Headset Bluetooth</div>
+<div class="harga">Rp175.000</div>
+<button class="btn" onclick="tambah('Headset Bluetooth',175000)">+ Keranjang</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?random=4">
+<div class="info">
+<div class="nama">Jam Tangan</div>
+<div class="harga">Rp320.000</div>
+<button class="btn" onclick="tambah('Jam Tangan',320000)">+ Keranjang</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?random=5">
+<div class="info">
+<div class="nama">Skincare</div>
+<div class="harga">Rp95.000</div>
+<button class="btn" onclick="tambah('Skincare',95000)">+ Keranjang</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/300?random=6">
+<div class="info">
+<div class="nama">Power Bank</div>
+<div class="harga">Rp210.000</div>
+<button class="btn" onclick="tambah('Power Bank',210000)">+ Keranjang</button>
+</div>
+</div>
+
+</div>
+
+<div id="keranjang">
+<h2>🛒 Keranjang Belanja</h2>
+
+<div id="listBarang">
+Belum ada barang.
+</div>
+
+<div class="total">
+Total: <span id="totalHarga">Rp0</span>
+</div>
+
+<button class="checkout" onclick="checkout()">
+Checkout
+</button>
+
+</div>
+
+<script>
+let keranjang = [];
+let total = 0;
